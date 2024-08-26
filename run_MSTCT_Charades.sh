@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 export PATH=/pytorch_env/bin:$PATH
 
+export CUDA_VISIBLE_DEVICES=1
+
 python train.py \
 -dataset charades \
 -mode rgb \
